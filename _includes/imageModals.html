@@ -1,43 +1,57 @@
 <!-- image Modals -->
-<!-- 🔽 HTML 구조 -->
-  <div class="row justify-content-center  raon-gallery">
-	  <img src="assets/img/imageModal/thumbs/20240525.jpg" 
-	       data-full="assets/img/imageModal/20240525.jpg" 
-	       alt="28회 성남문화예술제 음악제 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20191228.jpg" 
-	       data-full="assets/img/imageModal/20191228.jpg" 
-	       alt="환희의 송가 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20191217.jpg" 
-	       data-full="assets/img/imageModal/20191217.jpg" 
-	       alt="크리스마스 공연" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20191001.jpg" 
-	       data-full="assets/img/imageModal/20191001.jpg" 
-	       alt="울림3 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20190227.jpg" 
-	       data-full="assets/img/imageModal/20190227.jpg" 
-	       alt="나의조국 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20181005.jpg" 
-	       data-full="assets/img/imageModal/20181005.jpg" 
-	       alt="베르디 레퀴엠 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-	  <img src="assets/img/imageModal/thumbs/20180823.jpg" 
-	       data-full="assets/img/imageModal/20180823.jpg" 
-	       alt="울림2 포스터" 
-	       class="raon-thumb" 
-	       onclick="openModal(this)">
-  </div>
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].news.section | default: "news" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">
+          {{ site.data.sitetext[site.locale].news.title | markdownify | default: "news" }}
+        </h2>
+        <h3 class="section-subheading text-muted">
+          {{ site.data.sitetext[site.locale].news.text | markdownify }}
+        </h3>
+      </div>
+    </div>
 
+	<!-- 🔽 HTML 구조 -->
+	  <div class="row justify-content-center  raon-gallery">
+		  <img src="assets/img/imageModal/thumbs/1.jpeg" 
+		       data-full="assets/img/imageModal/1.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/2.jpeg" 
+		       data-full="assets/img/imageModal/2.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/3.jpeg" 
+		       data-full="assets/img/imageModal/3.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/4.jpeg" 
+		       data-full="assets/img/imageModal/4.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/5.jpeg" 
+		       data-full="assets/img/imageModal/5.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/6.jpeg" 
+		       data-full="assets/img/imageModal/6.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+		  <img src="assets/img/imageModal/thumbs/7.jpeg" 
+		       data-full="assets/img/imageModal/7.jpeg" 
+		       alt="특강" 
+		       class="raon-thumb" 
+		       onclick="openModal(this)">
+	  </div>
+	</div>
+</section>
 <!-- 🔽 모달 HTML -->
 <div id="imageModal" class="raon-image-modal" onclick="closeModal()">
   <span class="raon-modal-close">×</span>

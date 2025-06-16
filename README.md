@@ -1,4 +1,4 @@
-# [라온 필하모닉 합창단 홈페이지 입니다.](raonphilchior.github.io)
+# [진영 플라톤학원 홈페이지 입니다.]
 
 Agency Jekyll Theme 를 이용하여 제작하였습니다. 
 하기는 디자인 관련 정보입니다.

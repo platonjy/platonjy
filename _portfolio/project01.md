@@ -1,7 +1,17 @@
 ---
-order: 1  
-youtube: https://www.youtube.com/embed/42cK69YXMiA
+order: 1
+title: 국어 시간표
+subtitle: 하경일 원장
+image: assets/img/portfolio/1-1.jpg
+alt: 국어 시간표
+
 caption:
-  title: 한신대학교78주년기념콘서트
-  subtitle: 2018년 4월
+  title: 국어 시간표
+  subtitle: 하경일 원장
+  thumbnail: assets/img/portfolio/1.jpeg
 ---
+
+
+{:.list-inline}
+
+	
