@@ -2,7 +2,7 @@
 order: 3
 title: 수학 시간표
 subtitle: 김우진 원장
-image: assets/img/portfolio/3-1.jpg
+image: assets/img/portfolio/3-detail.jpg
 alt: 영어 시간표
 
 caption:
