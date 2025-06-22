@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     button: 더 알아보기
     buttonlink: "#about"
   logo:
-    path: /assets/img/logo.png
+    path: /assets/img/logo.png #logo.path
     height: 40   # 네비게이션 바에 들어갈 로고 높이
   news:
     title: "소식"
@@ -25,7 +25,7 @@ en: &DEFAULT_EN
     closebutton: "소식 닫기"
 
   portfolio:
-    title: "과목표"
+    title: "강의시간"
     text: "Class schedule"
     section: portfolio
     closebutton: "과목시간표 닫기"

@@ -1,10 +1,10 @@
 <!-- Footer -->
-<footer class="footer" id="footer" style="background-color: #3399ff;">
+<footer class="footer" id="footer" style="background-color: #212529;">
   <div class="container">
     {% if site.locale and site.locale != "" and site.locale != nil %}
     <div class="row align-items-center">
       <div class="col-md-4">
-        <span class="copyright"
+        <span class="copyright text-light"
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
       </div>
@@ -26,7 +26,7 @@
     {% else %}
     <div class="row align-items-center">
       <div class="col-md-4">
-        <span class="copyright"
+        <span class="copyright text-light"
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
       </div>
