@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     button: 더 알아보기
     buttonlink: "#about"
   logo:
-    path: /assets/img/logo.png #logo.path
+    path: assets/img/logo.png #logo.path
     height: 40   # 네비게이션 바에 들어갈 로고 높이
   news:
     title: "소식"
