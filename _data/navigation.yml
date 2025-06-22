@@ -15,7 +15,7 @@ en: &DEFAULT_EN
       section: news
     - title: 강의시간
       section: portfolio
-    - title: 플라톤학원
+    - title: 학원안내
       section: about
     - title: 위치
       section: location
