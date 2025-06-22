@@ -20,7 +20,7 @@ en: &DEFAULT_EN
     - title: 위치
       section: location
     - title: 문의
-      url: #
+      url: https://forms.gle/LTWTYJdvjMiweDRq9
 en-US:
   <<: *DEFAULT_EN
 en-CA:
