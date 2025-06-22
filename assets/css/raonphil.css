@@ -199,7 +199,15 @@ header.masthead {
 }
 
 header.masthead img {
-  height: 100px;
+  height: 180px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+	header.masthead img {
+	  height: 200px;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}	
 }
