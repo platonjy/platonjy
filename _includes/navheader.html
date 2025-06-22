@@ -46,7 +46,9 @@
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <header class="masthead">
   <div class="container">
+	<!-- 로고 이미지 추가 -->
     <div class="intro-text">
+	  <img src="/assets/img/logo_black_bg.jpg" alt="플라톤 로고"  class="logo-header" />
       {% if site.data.sitetext[site.locale].header.title %}
         <div class="intro-lead-in">{{ site.data.sitetext[site.locale].header.title | markdownify }}</div>
       {% endif %}
@@ -69,7 +71,9 @@
 {% else %}
 <header class="masthead">
   <div class="container">
+	<!-- 로고 이미지 추가 -->
     <div class="intro-text">
+	  <img src="/assets/img/logo_black_bg.jpg" alt="플라톤 로고" class="logo-header" />
       {% if site.data.sitetext.header.title %}
         <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
       {% endif %}

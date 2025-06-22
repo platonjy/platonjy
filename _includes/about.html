@@ -1,35 +1,66 @@
 <!-- About -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].about.text | default: "" }}</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted  about-text ">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
-      </div>
-    </div>
-  </div>
-</section>
+{% if site.locale and site.data.sitetext[site.locale] and site.data.sitetext[site.locale].about %}
+  {% assign about = site.data.sitetext[site.locale].about %}
 {% else %}
-<section class="page-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
+  {% assign about = site.data.sitetext.about %}
+{% endif %}
+
+<section class="page-section py-3" id="{{ about.section | default: 'about' }}">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3>
+      <div class="col-lg-12 text-center mb-4">
+        <h2 class="section-heading text-uppercase fw-bold fs-1">{{ about.title }}</h2>
+        <h3 class="section-subheading text-muted fs-6 fst-italic">{{ about.text }}</h3>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted  about-text">{{ site.data.sitetext.about.body | markdownify }}</div>
+      <div class="col-lg-10 mx-auto text-start">
+
+        <!-- 본문 -->
+        <div class="text-muted mb-4 fs-6" style="line-height: 1.6;">
+          {{ about.body | markdownify }}
+        </div>
+
+		<!-- 모집 대상 -->
+		<p class="fs-5 mb-2"><strong>{{ about.recruit_targets_title }}</strong> {{ about.recruit_targets }}</p>
+
+		<!-- 개설 과목 -->
+		<p class="fs-5 mb-3"><strong>{{ about.subjects_title }}</strong> {{ about.subjects }}</p>
+
+		<!-- 학생관리 시스템 -->
+		<p class="fs-5 fw-bold mb-2"><strong>{{ about.system_features_title }}</strong></p>
+		<ul class="mb-4 ps-3 fs-6" style="line-height: 1.5;">
+		  {% for item in about.system_features %}
+		    <li class="mb-1">{{ item }}</li>
+		  {% endfor %}
+		</ul>
+
+		<!-- 프로그램 표 -->
+		<p class="fs-5 fw-bold mb-3"><strong>{{ about.program_table_title }}</strong></p>
+		<div class="table-responsive">
+		  <table class="table table-bordered text-center align-middle">
+		    <thead class="table-light fs-6 fw-bold">
+		      <tr>
+		        {% for header in about.program_table.headers %}
+		          <th class="py-3 px-4">{{ header }}</th>
+		        {% endfor %}
+		      </tr>
+		    </thead>
+		    <tbody class="" style="font-size: 0.8rem;">
+		      {% for row in about.program_table.rows %}
+		        <tr>
+		          {% for cell in row %}
+		            <td class="py-3 px-4">{{ cell }}</td>
+		          {% endfor %}
+		        </tr>
+		      {% endfor %}
+		    </tbody>
+		  </table>
+		</div>
+
+
       </div>
     </div>
   </div>
 </section>
-{% endif %}
-<!-- End About -->

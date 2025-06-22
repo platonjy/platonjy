@@ -13,13 +13,13 @@ en: &DEFAULT_EN
   nav:
     - title: 소식
       section: news
-    - title: 과목시간표
+    - title: 강의시간
       section: portfolio
-    - title: 소개
+    - title: 플라톤학원
       section: about
     - title: 위치
       section: location
-    - title: 가입
+    - title: 문의
       url: #
 en-US:
   <<: *DEFAULT_EN
