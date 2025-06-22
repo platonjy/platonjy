@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Hakgyoansim OTF R';
-  src: url('/assets/css/font/HakgyoansimDunggeunmisoOTF-R-KO.woff2') format('woff2'),
-       url('/assets/css/font/HakgyoansimDunggeunmisoOTF-R-KO.woff') format('woff');
+  src: url('font/HakgyoansimDunggeunmisoOTF-R-KO.woff2') format('woff2'),
+       url('font/HakgyoansimDunggeunmisoOTF-R-KO.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Hakgyoansim OTF B';
-  src: url('/assets/css/font/HakgyoansimDunggeunmisoOTF-B-KO.woff2') format('woff2'),
-       url('/assets/css/font/HakgyoansimDunggeunmisoOTF-B-KO.woff') format('woff');
+  src: url('font/HakgyoansimDunggeunmisoOTF-B-KO.woff2') format('woff2'),
+       url('font/HakgyoansimDunggeunmisoOTF-B-KO.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Hakgyoansim Dunggeunmiso TTF B';
-  src: url('/assets/css/font/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2'),
-       url('/assets/css/font/HakgyoansimDunggeunmisoTTF-B.woff') format('woff');
+  src: url('font/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2'),
+       url('font/HakgyoansimDunggeunmisoTTF-B.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Hakgyoansim Dunggeunmiso TTF R';
-  src: url('/assets/css/font/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2'),
-       url('/assets/css/font/HakgyoansimDunggeunmisoTTF-R.woff') format('woff');
+  src: url('font/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2'),
+       url('font/HakgyoansimDunggeunmisoTTF-R.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
