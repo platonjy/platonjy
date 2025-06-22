@@ -24,6 +24,8 @@
   <meta property="og:description" content="국어,영어,수학,과학전문 입시학원">
   <meta property="og:title" content="[플라톤학원 - 홈페이지] ">
   <meta property="og:url" content="assets/img/og-image.jpg ">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+
   
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
@@ -47,6 +49,7 @@
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
   <link href="assets/css/agency.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet" />
   <link href="assets/css/raonphil.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet" />
+  
 
   <!-- Page container change top padding when nav shrinks -->
   {% if page.layout == "page" %}
