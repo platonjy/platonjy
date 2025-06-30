@@ -20,7 +20,7 @@ en: &DEFAULT_EN
     - title: 위치
       section: location
     - title: 문의
-      url: https://forms.gle/LTWTYJdvjMiweDRq9
+      url: https://talk.naver.com/ct/wzin2by?frm=mnmb
 en-US:
   <<: *DEFAULT_EN
 en-CA:
